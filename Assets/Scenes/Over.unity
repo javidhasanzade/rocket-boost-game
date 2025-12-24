@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bd30309f518e7a94e974fd0461bb1d80, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -666,7 +666,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -679,7 +679,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081130041}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -854,6 +854,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f080a38e222fda64699a7ced3c9360b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLoadDelay: 2
+  successAudio: {fileID: 8300000, guid: 5e0b45ae584dff14f82680c1027e4643, type: 3}
+  failureAudio: {fileID: 8300000, guid: 76f9a0c0b33c2564bb0c03686b668d44, type: 3}
 --- !u!1 &2122858893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1131,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1420539909514716539, guid: 3263ee2a1444d2a4e8d5d713769eadda, type: 3}
+      propertyPath: mainEngineAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 31ab359a6e853eb4582e5156c8de3e2e, type: 3}
     - target: {fileID: 4422108574317665035, guid: 3263ee2a1444d2a4e8d5d713769eadda, type: 3}
       propertyPath: m_Name
       value: Player Rocket

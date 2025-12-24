@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bd30309f518e7a94e974fd0461bb1d80, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -755,8 +755,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 31ab359a6e853eb4582e5156c8de3e2e, type: 3}
-  m_Resource: {fileID: 8300000, guid: 31ab359a6e853eb4582e5156c8de3e2e, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -855,6 +855,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoadDelay: 2
+  successAudio: {fileID: 8300000, guid: 5e0b45ae584dff14f82680c1027e4643, type: 3}
+  failureAudio: {fileID: 8300000, guid: 76f9a0c0b33c2564bb0c03686b668d44, type: 3}
 --- !u!1001 &1943155202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1210,6 +1212,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1420539909514716539, guid: 3263ee2a1444d2a4e8d5d713769eadda, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: 31ab359a6e853eb4582e5156c8de3e2e, type: 3}
+    - target: {fileID: 1420539909514716539, guid: 3263ee2a1444d2a4e8d5d713769eadda, type: 3}
+      propertyPath: thrustStrength
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420539909514716539, guid: 3263ee2a1444d2a4e8d5d713769eadda, type: 3}
+      propertyPath: mainEngineAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 31ab359a6e853eb4582e5156c8de3e2e, type: 3}
     - target: {fileID: 4422108574317665035, guid: 3263ee2a1444d2a4e8d5d713769eadda, type: 3}
       propertyPath: m_Name
       value: Player Rocket
